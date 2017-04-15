@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>
+
+ body {
+     margin:0;
+     padding:0;
+     height:100%;
+     font-family: "Lato", sans-serif;
+     }
+     #event{
+     	margin:20px;
+     
+     }
+     #p1{
+     	text-align: center;
+     	font-size:30px;
+     	font-family:Times ;
+
+     }
+     #eventure{
+     	
+
+     }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#menu
+{
+background-color: blue;
+height:200px;
+width:25%;
+color:white;
+float:left;
+}
+.dropdown
+{
+	height: 50px;
+	width:100%;
+}
+
+
+#search
+{
+background-color: blue;
+height: 200px;
+width:75%;
+float:left;
+font-size:30px;
+text-align:left;
+}
+#city{
+	font-size:25px;
+	font-family: serif;
+}
+#nav
+{
+	
+	height:50px;
+	width: 100%;
+	float:left;
+}
+#dropdown
+{
+	float:left;
+	width:100%;
+}
+.form-control
+{
+	width:70%;
+}
+.navbar-header
+{
+	width:20%;
+
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+</head>
+<body>
+<div id="full">
+<div id ="menu">
+
+
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+} 
+</script>
+     </div>
+     <div id="search">
+<img id="eventure" src="imgs/Screenshot (4).png" width="60%" height="70%"  > </img>
+Search city :<select id="city" name="search">
+<option value="ahm">Ahmedabad</option>
+<option value="alb">Allahbad</option>
+<option value="bng">Bangalore</option>
+<option value="chn">Chennai</option>
+<option value="del">Delhi</option>
+<option value="far">Faridabad</option>
+<option value="goa">Goa</option>
+<option value="kol">Kolkata</option>
+<option value="mum">Mumbai</option>
+<option value="pun">Pune</option>
+<option value="raj">Rajkot</option>
+<option value="rai">Raipur</option>
+<option value="sim">Shimla</option>
+<option value="war">Warangal</option>
+</select>
+</div>
+
+</div>
+ <div id="dropdown">
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><span>HOME</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">ABOUT</a></li>
+      <li><a href="#">SOCIAL</a></li>
+      <li><a href="prof.html">MY PROFILE</a></li>
+    </ul>
+    <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</nav>
+ </div>
+ <div id="event">
+ <p id="p1">EVENTS</p>
+ <a href="sports.html"> <img src="imgs/sports.jpg" width="20%" height="40%" hspace="80" ></img></a>
+ <a href="music.html"> <img src="imgs/music.jpg" width="20%" height="40%" hspace="80"> </img></a>
+ <a href=""> <img src="imgs/dance.jpg" width="20%" height="40%" hspace="80"> </img></a>
+ <a href=""> <img src="imgs/meeting.jpg" width="20%" height="40%" hspace="80"> </img></a>
+ <a href=""> <img src="imgs/conferences.jpg" width="20%" height="40%" hspace="80"> </img></a>
+ <a href=""> <img src="imgs/seminar.jpg" width="20%" height="40%" hspace="80"> </img></a>
+ </div>
+</body>
+</html> 
